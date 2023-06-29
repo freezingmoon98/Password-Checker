@@ -1,6 +1,9 @@
 # Password-Validator
 Python program, that checks how secure a password is 
 
+# Requirements
+pip install pyenchant
+
 # Rules
 1. Length at least 10 characters, maximum 20
 2. Needs to contain at least one digit (0-9)
