@@ -1,5 +1,6 @@
 import re
-
+import enchant
+# English alphabet only, a script for other languages like Japanese etc will follow
 
 def check_digit(pwd: str) -> bool:
     return bool(re.search(r'[0-9]',pwd))
@@ -19,8 +20,6 @@ def check_white_space(pwd: str) -> bool:
 def check_length(pwd: str) -> bool:
     return 10 <= len(pwd) <= 20
 
-def check_word():
-    pass
 
 def help():
     print("Rules:\n At least 10 characters long, max 20 \n Needs to contain: Upper case and lower case characters, digits, special characters.\n Should not contain: Whitespaces, full words.\n")
@@ -51,6 +50,8 @@ def main():
               
         if check_white_space(pwd):
              print("- Your password must NOT contain white spaces \n")  
+        
+        
         
              
     
